@@ -6,35 +6,8 @@
   </head>
   <body> 
 	  <py-script>
-		  # Simple pygame program
- 2
- 3# Import and initialize the pygame library
- 4import pygame
- 5pygame.init()
- 6
- 7# Set up the drawing window
- 8screen = pygame.display.set_mode([500, 500])
- 9
-10# Run until the user asks to quit
-11running = True
-12while running:
-13
-14    # Did the user click the window close button?
-15    for event in pygame.event.get():
-16        if event.type == pygame.QUIT:
-17            running = False
-18
-19    # Fill the background with white
-20    screen.fill((255, 255, 255))
-21
-22    # Draw a solid blue circle in the center
-23    pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
-24
-25    # Flip the display
-26    pygame.display.flip()
-27
-28# Done! Time to quit.
-29pygame.quit()
+		  print("<h1>Written in Python")
+		  print("<style>h1{text-align:center;</style>")
 	  </py-script>
 	</body>
 </html>
