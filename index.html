@@ -4,46 +4,37 @@
 	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   </head>
-  <body> <py-script>
-	  from random import randint
-WIDTH = 400
-HEIGHT = 400
-score = 0
-game_over = False
-fox = Actor("fox")
-coin = Actor("coin")
-coin.pos = 200, 200
-def draw():
-  screen.fill("green")
-  fox.draw()
-  coin.draw()
-  screen.draw.text("Score:" + str(score), color="black" topleft=(10,10))
-if game_over:
-  screen.fill("pink")
-  screen.draw.text("Final Score:" + str(score), topleft=(10,10), fontsize=60)
-def place_coin():
-  coin.x = randint(20, (WIDTH - 20))
-  coin.y = randint(20, (HEIGHT - 20))
- def time_up():
-  global game_over
-  game_over = True
-  
-def update():
-  place_coin()
-  global score
-  if keyboard.left:
-    fox.x = fox.x - 4
-  elif keyboard.right:
-    fox.x = fox.x + 4
-  elif keyboard.down:
-    fox.x = fox.x + 4
-  coin_collected = fox.colliderect(coin)
-  if coin_collected:
-    score = score + 10
-    place_coin()
-clock.schedule(time_up, 15.0)
-place_coin()
-hedgehog =  Actor("hedgehog")
-</py-script>
+  <body> 
+	  <py-script>
+		  # Simple pygame program
+ 2
+ 3# Import and initialize the pygame library
+ 4import pygame
+ 5pygame.init()
+ 6
+ 7# Set up the drawing window
+ 8screen = pygame.display.set_mode([500, 500])
+ 9
+10# Run until the user asks to quit
+11running = True
+12while running:
+13
+14    # Did the user click the window close button?
+15    for event in pygame.event.get():
+16        if event.type == pygame.QUIT:
+17            running = False
+18
+19    # Fill the background with white
+20    screen.fill((255, 255, 255))
+21
+22    # Draw a solid blue circle in the center
+23    pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
+24
+25    # Flip the display
+26    pygame.display.flip()
+27
+28# Done! Time to quit.
+29pygame.quit()
+	  </py-script>
 	</body>
 </html>
