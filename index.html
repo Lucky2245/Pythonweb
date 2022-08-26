@@ -5,13 +5,45 @@
 	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   </head>
   <body> <py-script>
-	  print("<h1>Written in Python</h1>")
-	  print("<p>Thank you for visiting this website</p>")
-	  y = 5
-	  if y == 5:
-	    print("Y is equal to five")
-	  else:
-	     print("Y is not equal to five!")
+	  from random import randint
+WIDTH = 400
+HEIGHT = 400
+score = 0
+game_over = False
+fox = Actor("fox")
+coin = Actor("coin")
+coin.pos = 200, 200
+def draw():
+  screen.fill("green")
+  fox.draw()
+  coin.draw()
+  screen.draw.text("Score:" + str(score), color="black" topleft=(10,10))
+if game_over:
+  screen.fill("pink")
+  screen.draw.text("Final Score:" + str(score), topleft=(10,10), fontsize=60)
+def place_coin():
+  coin.x = randint(20, (WIDTH - 20))
+  coin.y = randint(20, (HEIGHT - 20))
+ def time_up():
+  global game_over
+  game_over = True
+  
+def update():
+  place_coin()
+  global score
+  if keyboard.left:
+    fox.x = fox.x - 4
+  elif keyboard.right:
+    fox.x = fox.x + 4
+  elif keyboard.down:
+    fox.x = fox.x + 4
+  coin_collected = fox.colliderect(coin)
+  if coin_collected:
+    score = score + 10
+    place_coin()
+clock.schedule(time_up, 15.0)
+place_coin()
+hedgehog =  Actor("hedgehog")
 </py-script>
 	</body>
 </html>
