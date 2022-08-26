@@ -7,7 +7,10 @@
   <body> 
 	  <py-script>
 		  print("<h1>Welcome to my website</h1>")
-		  print("<a href='about'>About</a>")
+		  print("<a href='?page=about'>About</a>")
 	  </py-script>
+	  <script>if(window.location.href == "https://lucky2245.github.io/Pythonweb?page=about"){
+			  window.location.assign("about");
+		  }
 	</body>
 </html>
