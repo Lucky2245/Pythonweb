@@ -6,9 +6,9 @@
   </head>
   <body> 
 	  <py-script>
-		  import hello
-		  print("<h1>Welcome to my website</h1>")
-		  print("<a href='?page=about'>About</a>")
+		  username = input("Create A Username:")
+		  with open('signup.txt' ,'w') as f:
+		      f.write(username)
 	  </py-script>
 	  <script>if(window.location.href == "https://lucky2245.github.io/Pythonweb?page=about"){
 			  window.location.assign("about");
