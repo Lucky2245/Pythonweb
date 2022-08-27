@@ -12,8 +12,13 @@
   </head>
   <body> 
 	  <py-script>
-		  import hellomodule
-		  hellomodule.say_hello()
+		 import JSON
+		  
+		  #some JSON
+		  
+		  x = '{ "name":"Bob", "age":"30", "city": "New York"
+		  y = json.loads(x)
+		  print(y["name"])
 	  </py-script>
 	  <script>if(window.location.href == "https://lucky2245.github.io/Pythonweb?page=about"){
 			  window.location.assign("about");
