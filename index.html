@@ -6,11 +6,18 @@
   </head>
   <body> 
 	  <py-script>
+		  from pathlib import Path
 		  username = input("Create A Username:")
 		  with open('signup.txt' ,'w') as f:
 		      f.write(username)
 		  username = open("signup.txt")
-		  print("Welcome Back" + username.read())
+		  path_to_file = "signup.txt"
+		  path = Path(path_to_file)
+		  if path.is_file():
+		    print('Welcome back:' + username.read())
+		    username = False
+		  else:
+		       username = input("Create a username")
 	  </py-script>
 	  <script>if(window.location.href == "https://lucky2245.github.io/Pythonweb?page=about"){
 			  window.location.assign("about");
