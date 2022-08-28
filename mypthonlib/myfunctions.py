@@ -12,3 +12,5 @@ float:
   c = 2* asin(sqrt(a))
   r = 6371 # Radius of earth kilometers
   return c*r
+def add(Add,ADD):
+  return ADD+Add
