@@ -10,3 +10,5 @@ def say(PRint):
     print(PRint)
 def popup(pop):
     input(pop)
+def Webserver():
+    input webserver
