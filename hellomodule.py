@@ -34,3 +34,7 @@ def run():
   print(f.read())
 def say_goodbye():
   print("Goodbye, World!")
+def CookiesEnabled():
+  message = "<script>document.write(navigator.cookieEnabled);</script>"
+  f = open("index.html", "w")
+  f.write(message)
