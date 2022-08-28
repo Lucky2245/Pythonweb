@@ -1,6 +1,6 @@
 from setuptools import *
 setup(
-  name='mypthonlib',
+  name='pymath',
   packages=find_packages(include=['pymath']),
   version='0.1.0',
   author ='SaturnLang',
