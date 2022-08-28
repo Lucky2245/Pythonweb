@@ -38,5 +38,5 @@ def CookiesEnabled():
   message = "<script>document.write(navigator.cookieEnabled);</script>"
   f = open("index.html", "w")
   f.write(message)
- def link():
-  messsage ="<a></a>"
+def link(): 
+  message ="<a></a>"
