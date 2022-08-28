@@ -1,2 +1,4 @@
-def multiply(number, multiplier):
-  return number * multiplier
+def multiply(number, muiltiplier):
+    return number * muiltiplier
+def add(number, adder):
+    return number + adder
