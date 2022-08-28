@@ -4,39 +4,39 @@ def say_hello():
   f = open("index.html", "w")
   f.write(message)
   f.close()
-def noscript():
+class noscript():
    message = "<noscript>Please Enable Javascript</noscript>" #code will be noscript
    print("The file will be saved as index.html")
    f = open("index.html", "w")
    f.write(message)
    f.close()
-def style():
+class style():
   message = "<style>p{color:orange;}</style>" #code will be style()
   print("The file will be saved as index.html")
   f = open("index.html", "w")
   f.write(message)
   f.close()
-def headerone():
+class headerone():
   message = "<h1>Header One</h1>"#code will be headerone()
   print("The file will be saved as index.html")
   f = open("index.html", "w")
   f.write(message)
   f.close()
-def script():
+class script():
   message ="<script></script>"
   print("The file will be saved as index.html")
   f = open("index.html", "w")
   f.write(message)
   f.close()
-def run():
+class run():
   print("running The Code")
   f = open("index.html", "r")
   print(f.read())
-def say_goodbye():
+class say_goodbye():
   print("Goodbye, World!")
-def CookiesEnabled():
+class CookiesEnabled():
   message = "<script>document.write(navigator.cookieEnabled);</script>"
   f = open("index.html", "w")
   f.write(message)
-def link(): 
+class link(): 
   message ="<a></a>"
