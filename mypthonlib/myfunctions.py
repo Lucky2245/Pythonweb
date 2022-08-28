@@ -14,3 +14,9 @@ float:
   return c*r
 def add(Add,ADD):
   return ADD+Add
+def subtract(Subtract,SUBTRACT):
+  return Subtract-SUBTRACT
+def multiply(Multiply, MUltiply):
+  return Multiply * MUltiply
+def divide(Divide, DIvide):
+  return Divide/DIvide
