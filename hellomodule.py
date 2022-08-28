@@ -32,3 +32,5 @@ def run():
   print("running The Code")
   f = open("index.html", "r")
   print(f.read())
+def say_goodbye():
+  print("Goodbye, World!")
