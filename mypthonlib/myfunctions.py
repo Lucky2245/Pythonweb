@@ -1,6 +1,6 @@
 from math import *
 
-def haversine(lon1: float, lat1: float, lon2: float, lat2: flost) ->
+def haversine(lon1: float, lat1: float, lon2: float, lat2: float) ->
 float:
   #Convert decimal degrees radians
   lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
