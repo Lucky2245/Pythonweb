@@ -24,7 +24,6 @@ def headerone():
   f.close()
 def script():
   message ="<script></script>"
-  src ="src"
   print("The file will be saved as index.html")
   f = open("index.html", "w")
   f.write(message)
@@ -39,3 +38,5 @@ def CookiesEnabled():
   message = "<script>document.write(navigator.cookieEnabled);</script>"
   f = open("index.html", "w")
   f.write(message)
+ def link():
+  messsage ="<a></a>"
