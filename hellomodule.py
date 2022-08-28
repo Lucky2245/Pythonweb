@@ -1,4 +1,4 @@
-def say_hello():
+class say_hello():
   message = "Hello, World!" #code will be say_hello()
   print("The file will be saved as index.html")
   f = open("index.html", "w")
