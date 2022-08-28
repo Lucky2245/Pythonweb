@@ -13,10 +13,10 @@ float:
   r = 6371 # Radius of earth kilometers
   return c*r
 def add(Add,ADD):
-  return ADD+Add
+  return ADD+Add#add: ADD and Add
 def subtract(Subtract,SUBTRACT):
-  return Subtract-SUBTRACT
+  return Subtract-SUBTRACT #Subtract: Subtract and SUBTRACT
 def multiply(Multiply, MUltiply):
-  return Multiply * MUltiply
+  return Multiply * MUltiply#multiply: Multiply and multiply
 def divide(Divide, DIvide):
-  return Divide/DIvide
+  return Divide/DIvide#divide: Divide and DIvide
