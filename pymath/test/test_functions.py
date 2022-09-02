@@ -5,3 +5,4 @@ def test_haversine():
 Math(add(5,5))
 Math(subtract(10,5))
 Math(multiply(5,2))
+Math(divide(5,1))
