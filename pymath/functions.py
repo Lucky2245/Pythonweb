@@ -25,3 +25,5 @@ def divide(Divide, DIvide):
   return Divide/DIvide#divide: Divide and DIvide
 def pymath(MAth):
   print(Math)
+def Help():
+  print("To Add: Math(add(number,number)), To Subtract: Math(subtract(number,number), To Multiply: Math(multiply(number,number), To Divide: Math(divide(number,number)")
