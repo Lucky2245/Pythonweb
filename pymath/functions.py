@@ -26,4 +26,4 @@ def divide(Divide, DIvide):
 def pymath(MAth):
   print(MAth)
 def Help():
-  print("To Add: pymath(add(number,number)), To Subtract: Math(subtract(number,number), To Multiply: Math(multiply(number,number), To Divide: Math(divide(number,number)")
+  print("To Add: pymath(add(number,number)), To Subtract: pymath(subtract(number,number), To Multiply: pymath(multiply(number,number), To Divide: pymath(divide(number,number)")
