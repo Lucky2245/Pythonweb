@@ -23,5 +23,5 @@ def multiply(Multiply, MUltiply):
   return Multiply * MUltiply#multiply: Multiply and multiply
 def divide(Divide, DIvide):
   return Divide/DIvide#divide: Divide and DIvide
-def Math(MAth):
+def pymath(MAth):
   print(Math)
