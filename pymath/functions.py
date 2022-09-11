@@ -2,7 +2,6 @@
 Created by SaturnLang
 """
 from math import *
-
 def haversine(lon1: float, lat1: float, lon2: float, lat2: float) ->
 float:
   #Convert decimal degrees radians
