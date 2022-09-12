@@ -27,3 +27,7 @@ def pymath(MAth):
 def Help():
   print("To Add: pymath(add(number,number)), To Subtract: pymath(subtract(number,number)), To Multiply: pymath(multiply(number,number)), To Divide: pymath(divide(number,number))")
   print("To learn Pymath go to lucky2245.github.io/pymath")
+def rounddown(rOund):
+    print(math.floor(rOund))
+def roundup(up):
+    print(math.ceil(up))
